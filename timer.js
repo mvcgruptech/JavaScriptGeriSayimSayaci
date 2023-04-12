@@ -19,10 +19,10 @@ function yeniYil(){
     let m=Math.floor((fark%(saat))/dakika);
     let sn=Math.floor((fark%(dakika))/saniye);
 
-    document.getElementById("gun").innerText=g;
-    document.getElementById("saat").innerText=s;
-    document.getElementById("dakika").innerText=m;
-    document.getElementById("saniye").innerText=sn;
+    document.getElementById("gun").innerText=g<10?("0"+g):g;
+    document.getElementById("saat").innerText=s<10?("0"+s):s;
+    document.getElementById("dakika").innerText=m<10?("0"+m):m;
+    document.getElementById("saniye").innerText=sn<10?("0"+sn):sn;
 }
 
 setInterval(function(){
